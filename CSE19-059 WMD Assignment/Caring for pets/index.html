@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caring for pets</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="navbar"> <!--navbar container-->
+            <div><img src="images/Logo.png"></div> <!--Logo element-->
+            
+            <div> <!--Desktop and mobile nav list container-->
+                <li> <!--desktop nav list-->
+                    <a class="nav-item" href="index.html">Home</a>
+                    <a class="nav-item" href="about.html">About Us</a>
+                    <a class="nav-item" href="services.html">Services</a>
+                    <a class="nav-item" href="contact.html">Contact Us</a>
+                    
+                    <div class="dropdown"> <!--Mobile nav list-->
+                        <img src="images/menu-icon.png" onclick="myFunction()" class="dropbtn"></img>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="services.html">Services</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                <li>
+            </div>
+        </div>
+
+        <section class="section-horizontal background-one"> <!--Section container-->
+            <div class="box"> <!--Flexbox item-->
+                <div class="title-text">Caring for pets</div>
+                
+                <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+
+                <div class="paragraph-text">Welcome to Caring for pets, your information hub on all things animal related. </div>
+                
+                <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+                
+                <a href="services.html"><button class="btn-template">Contact</button></a>
+                
+                <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+            </div>
+        </section>
+
+        <section class="section-vertical background-two"> <!--Section container-->
+            
+            <div class="box"> <!--Flexbox item-->
+                <img class="image-template" src="images/dog.jpg" alt="dog-image">
+            </div>
+
+            <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+
+            <div class="box"> <!--Flexbox item-->
+                <div class="title-text">What we offer</div>
+
+                <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+                
+                <div class="paragraph-text"> We provide easy access to information concerning veterinary services available in nearby locations that people may or may not know about. Their sevices may range from medication, animal accessories and animal hygiene among such services. </div>
+                
+                <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+
+                <a href="services.html"><button class="btn-template">Services</button></a>
+            </div>
+            
+            <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+        </section>
+
+        <footer>
+            Caring for pets Copyright All Rights Reserved.
+        </footer>
+    </body>
+</html>

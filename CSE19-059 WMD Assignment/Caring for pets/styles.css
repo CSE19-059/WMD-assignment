@@ -1,0 +1,165 @@
+/*Mainly meant to get rid of the white space around the navbar*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Footer attributes*/
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.background-one {
+    background-color: rgb(42, 71, 216);
+}
+
+.background-two {
+    background-color: lightgray;
+}
+
+.title-text {
+    font-size: 50px;
+}
+
+.subtitle-text {
+    font-size: 40px;
+}
+
+.paragraph-text {
+    font-size: 30px;
+}
+
+/*Used to create a spacing element*/
+.space-element {
+    height: 50px;
+}
+
+.image-template {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.btn-template {
+    padding: 15px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+/*Used to display elements vertically in section elements*/
+.section-vertical {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/*Used to wrap flexbox items in section elements*/
+.section-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*Controls attributes of the "About Us" elements*/
+.wrap-item {
+    width: 500px;
+}
+
+
+/*Meant to add spacing to the left and right sides of the section elements*/
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Controls attributes of the flexbox items*/
+.box {
+    padding: 10px;
+    width: 100%;
+}
+
+/*Controls attributes of the navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+/*Removes all decorative aspects of lists e.g., bullet points*/
+.navbar li {
+    list-style-type: none;
+}
+
+/*Controls attributes of the nav list items*/
+.nav-item {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+/*Controls attributes of the mobile nav menu button*/
+.dropbtn {
+    cursor: pointer;
+    max-width: 30px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: -85%; /*Controls the positioning of the dropdown content*/
+    bottom: -550%; /*Controls the positioning of the dropdown content*/
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  /*Modifies the website to display on desktop screens*/
+  @media screen and (min-width: 1000px) {
+    /*Enables the desktop navbar*/
+    .nav-item {
+        display: inline-block;
+    }
+
+    /*Disables the mobile nav menu button*/
+    .dropbtn {
+        display: none;
+    }
+
+    /*Modifies elements in the section elements to be displayed horizontally*/
+    .section-vertical {
+        flex-direction: row;
+    }
+  }

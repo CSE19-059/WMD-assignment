@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="navbar"> <!--navbar container-->
+            <div><img src="images/Logo.png"></div> <!--Logo element-->
+            
+            <div> <!--Desktop and mobile nav list container-->
+                <li> <!--desktop nav list-->
+                    <a class="nav-item" href="index.html">Home</a>
+                    <a class="nav-item" href="about.html">About Us</a>
+                    <a class="nav-item" href="services.html">Services</a>
+                    <a class="nav-item" href="contact.html">Contact Us</a>
+                    
+                    <div class="dropdown"> <!--Mobile nav list-->
+                        <img src="images/menu-icon.png" onclick="myFunction()" class="dropbtn"></img>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="services.html">Services</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                <li>
+            </div>
+        </div>
+
+        <section class="section-vertical background-one"> <!--Section container-->
+            <div class="box"> <!--Flexbox item-->
+                <div class="title-text">About Us</div>
+                <div class="space-element"></div>
+                <div class="paragraph-text">Caring for pets is an information website that enable you to find the best solutions when it comes to pets </div>
+            </div>
+
+            <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+
+            <div class="box">
+                <img class="image-template" src="images/dog.jpg" alt="dog-image">
+            </div>
+        </section>
+
+        <section class="background-two">
+
+            <div class="box">
+                <div class="title-text">Our goals</div>
+
+                <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+            </div>
+
+            <div class="section-wrap"> <!--Flexbox wrap section container-->
+                <div class="wrap-item"> <!--Flexbox wrap item-->
+                    <div class="subtitle-text">Caring for pets</div>
+                    <div class="paragraph-text">Our goal here at Caring for pets is to ensure access to people that find it difficult to find quality services and information for anything pet related whether it be for medicine or accessories that are hard to find making it easier for our customers.</div>
+                    
+                    <div class="space-element"></div> <!--Empty div element that is meant to add space between other elements-->
+                </div>
+    
+            </div>
+        </section>
+
+        <footer>
+            Caring for pets Copyright All Rights Reserved.
+        </footer>
+    </body>
+</html>
